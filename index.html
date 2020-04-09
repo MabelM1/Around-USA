@@ -9,22 +9,42 @@
 <body class="page">
   <header class="header">
     <img class="logo" src="./images/whiteTextLogo.svg" alt="logo">
-   <div class="line"></div>
+   <!--<div class="line"></div>-->
   </header>
   <section class="profile">
     <img class="avatar" src="./images/avatar.jpg" alt="avatar">
     <div class="profile__info">
-      <h1 class="profile__name">Jacques Cousteau</h1>
+      <div class="profile__text">
+        <h1 class="profile__name">Jacques Cousteau</h1>
+        <p class="profile__title">Explorer</p>
+      </div>
       <svg class="profile__edit" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none">
         <path d="M10 1.328L2.604 8.767 1.283 7.42 8.66 0 10 1.328zM0 10l1.962-.588L.585 8.083 0 10z" fill="#fff"/>
       </svg>
-      <p class="profile__title">Explorer</p>
     </div>
-    <svg class="button" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+   <svg class="button" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
     fill="none">
       <path d="M22 9.778h-9.778V0H9.778v9.778H0v2.444h9.778V22h2.444v-9.778H22V9.778z" fill="#fff"/>
     </svg>
+    <!--<svg class="button" xmlns="http://www.w3.org/2000/svg" width="150" height="50" fill="none">
+      <rect x="1" y="1" width="148" height="48" rx="1" stroke="#fff" stroke-width="2"/>
+      <path d="M86 23.778h-9.778V14h-2.444v9.778H64v2.444h9.778V36h2.444v-9.778H86v-2.444z" fill="#fff"/>
+    </svg>-->
+    <!--<div class="button"></div>-->
   </section>
+  <aside class="popup">
+    <div class="popup__container">
+      <form class="popup__form">
+        <h2 class="popup__title">Edit profile</h2>
+        <input class="popup__name" type="text" placeholder="Name">
+        <input class="popup__about" type="text" placeholder="About Me">
+        <button class="popup__button">Save</button>
+        <div class="popup__exit"></div>
+      </form>
+
+    </div>
+
+  </aside>
   <ul class="places">
     <li class="place">
       <img class="place__image" src="./images/yosemite-valley.png"  alt="yosemite valley">
@@ -89,7 +109,7 @@
     <li class="place">
       <img class="place__image" src="./images/vanois-National.png"  alt="Vanois">
       <div class="place__info">
-        <p class="place__name">Vanois National...</p>
+        <p class="place__name">Vanois National Park</p>
         <svg class="place__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="19" fill="none">
           <path d="M19.154 9.338c2.14-2.14 2.14-5.615 0-7.733a5.49 5.49 0 0 0-7.755 0l-1.038
           1.06-1.038-1.038c-2.14-2.16-5.615-2.16-7.734-.02C.55 2.643 0 4.02 0 5.482a5.52 5.52
@@ -116,5 +136,9 @@
       </div>
     </li>
   </ul>
+  <footer class="footer">
+    <p class="footer__text">© 2020 Around The U.S.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
