@@ -10,4 +10,4 @@ Responsive site featuring places in the US
 * JavaScript
 
 
-* [Link to the project in Github](https://mabelm1.github.io/Arond-USA/)
+* [Link to the project in Github](https://mabelm1.github.io/Around-USA/)
