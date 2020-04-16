@@ -1,58 +1,40 @@
 @import url(./__info/profile__info.css);
 @import url(./__name/profile__name.css);
-@import url(./__edit/profile__edit.css);
 @import url(./__title/profile__title.css);
 @import url(./__text/profile__text.css);
 
 .profile {
   margin: 13.1% auto 0;
   width:88%;
-  height:28.6rem;
+  min-height:28.6rem;
 
   display:flex;
   flex-direction: column;
-  /* flex-wrap:wrap; */
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 426px) and (max-width: 768px)  {
   .profile {
+    min-height:0;
     max-height:120px;
     max-width:882px;
-    /* width:100%; */
     width:97%;
-
-    /* margin:4rem auto 0; */
     margin:4rem 0 0;
+
     flex-direction:row;
     align-items:center;
     flex-wrap:nowrap;
    }
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 769px) {
   .profile {
-    max-height:120px;
-    max-width:882px;
-    /* width:100%; */
-    width:97%;
-
-    margin:4rem auto 0;
-    /* margin:4rem 0 0; */
-    flex-direction:row;
-    align-items:center;
-    flex-wrap:nowrap;
-   }
-}
-
-@media only screen and (min-width: 882px) {
-  .profile {
+    min-height:0;
     width:100%;
-    max-width:882px;
     margin:4rem 0 0;
+
     flex-direction:row;
     align-items:center;
     flex-wrap:nowrap;
-
-
    }
 }
+
